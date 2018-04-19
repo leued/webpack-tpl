@@ -4,7 +4,9 @@
   "description": "iii",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config  build/webpack/webpack.config.js",
+    "push": "git push -u origin master",
+    "dev": "webpack-dev-server --config build/webpack/webpack.config.js "
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/leued/webpack-tpl#readme",
   "devDependencies": {
-    "webpack": "^4.6.0"
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.6.0",
+    "webpack-dev-server": "^3.1.3"
   }
 }
